@@ -2,7 +2,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="Expense Splitter", page_icon="💸", layout="centered")
+st.set_page_config(page_title="SplitEase", page_icon="💸", layout="centered")
 
 if "people" not in st.session_state:
     st.session_state.people = []
@@ -84,7 +84,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.title("💸 Splitwise-lite")
+st.title("💸 SplitEase")
 st.markdown('<div class="subtitle">Track shared expenses and see who owes what.</div>', unsafe_allow_html=True)
 
 tab_people, tab_add, tab_expenses, tab_summary = st.tabs(
